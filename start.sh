@@ -5,7 +5,7 @@ export PYTHONUNBUFFERED=true
 VIRTUALENV=.data/venv
 
 if [ ! -d $VIRTUALENV ]; then
-  python3.7 -m venv $VIRTUALENV
+  python3.12 -m venv $VIRTUALENV
 fi
 
 if [ ! -f $VIRTUALENV/bin/pip ]; then
@@ -14,4 +14,4 @@ fi
 
 $VIRTUALENV/bin/pip install -r requirements.txt
 
-$VIRTUALENV/bin/python3.7 app.py
+$VIRTUALENV/bin/python3.12 app.py
